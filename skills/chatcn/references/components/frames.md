@@ -27,7 +27,7 @@ Where the AI shows up: chat inside phones, laptops, watches, car displays, keybo
 - `device-stack` (Pro): **Device stack.** A phone standing in front of a laptop, the classic product composition, with shadows that hold up in light and dark.
 - `annotated-screenshot` (Pro): **Annotated screenshot.** A screenshot with numbered callouts and notes that point at each other, with a dimmed spotlight on the part being described.
 - `zoom-inset` (Pro): **Zoom inset.** A magnified inset of one region of an image or live UI, joined to it by connector lines. Drag the region to move the zoom.
-- `og-templates` (Pro): **OG templates.** Open graph image templates for docs pages, models and changelogs, rendered with Satori, in light and dark.
+- `og-templates`, `og-template-preview` (Pro): **OG templates.** Open graph image templates for docs pages, models and changelogs, rendered with Satori, in light and dark.
 - `lock-screen-notification` (Pro): **Lock screen notification.** A phone lock screen with stacked agent notifications that fan out into a list with their actions.
 - `editor-window` (Pro): **Editor window.** A code editor frame with a file tree slot, file tabs, breadcrumbs, change bars, an inline suggestion and a status bar.
 - `device-preview` (Pro): **Device preview.** Render any component inside a phone, tablet, laptop, display, browser or watch, for docs and marketing.

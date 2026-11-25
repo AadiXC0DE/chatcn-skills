@@ -10,4 +10,4 @@ Artifacts and their panel and versions, web and JSX previews, resizable panes, a
 - `artifact-versions`: **Artifact versions.** Step through artifact versions or pick one from a list, with edit times and line diff counts to the previous version.
 - `web-preview`: **Web preview.** An iframe preview for apps an agent builds: URL bar with history, device sizes, a browser style loading bar, a crash view and a console drawer.
 - `jsx-preview`: **JSX preview.** Renders JSX written by a model without running it. Streaming tolerant, allowlisted and calm when it cannot render.
-- `use-chatcn-chat`: **AI SDK adapter.** Bind useChat from AI SDK 7 to chatcn actions, and run it with a scripted transport when there is no server. Docs: https://chatcn.dev/docs/components/ai-sdk.md.
+- `use-chatcn-chat`, `chatcn-mock-transport`: **AI SDK adapter.** Bind useChat from AI SDK 7 to chatcn actions, and run it with a scripted transport when there is no server. Docs: https://chatcn.dev/docs/components/ai-sdk.md.

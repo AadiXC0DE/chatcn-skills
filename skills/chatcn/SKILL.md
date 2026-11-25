@@ -5,7 +5,7 @@ description: Build AI product interfaces in React with chatcn, a shadcn registry
 
 # chatcn
 
-chatcn (https://chatcn.dev) is a shadcn registry of 750+ components for AI products: 224 free, 528 in chatcn Pro. Components install with the shadcn CLI as source files in the user's project (`components/ui/chatcn/`, blocks in `components/chatcn/`), so after install they are the user's code to read and change. They take plain props and read one message shape that mirrors AI SDK `UIMessage` parts, so they work with AI SDK, AG-UI, LangGraph or any stream.
+chatcn (https://chatcn.dev) is a shadcn registry of 750+ components for AI products: 223 free, 528 in chatcn Pro. Components install with the shadcn CLI as source files in the user's project (`components/ui/chatcn/`, blocks in `components/chatcn/`), so after install they are the user's code to read and change. They take plain props and read one message shape that mirrors AI SDK `UIMessage` parts, so they work with AI SDK, AG-UI, LangGraph or any stream.
 
 ## Workflow
 
@@ -90,7 +90,7 @@ Each file lists every item in the group, free first, with its install name and a
 | [Media](references/components/media.md) | image and video generation in a chat: generation cards, edit region, gallery, compare, aspect ratio, style and settings pickers | 10 | 0 |
 | [Shell](references/components/shell.md) | app chrome: chat layout, sidebar, thread list, header, command palette, search, shortcuts, onboarding, and Pro mobile shells | 11 | 8 |
 | [Settings](references/components/settings.md) | settings for AI apps: memory, custom instructions, connectors, knowledge base, usage and cost, model status, sharing, and Pro billing and API keys | 14 | 12 |
-| [Adapters](references/components/adapters.md) | connect a runtime other than AI SDK: AG-UI, LangGraph and assistant-ui adapters | 4 | 0 |
+| [Adapters](references/components/adapters.md) | connect a runtime other than AI SDK: AG-UI, LangGraph and assistant-ui adapters | 3 | 0 |
 
 ## chatcn Pro
 
