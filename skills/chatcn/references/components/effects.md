@@ -1,0 +1,81 @@
+# Effects
+
+Visual effects, reveals and loaders: dither, halftone, ASCII, pixel, particle, contour, flip dot, e-ink, text scramble, upscale and inpaint reveals. Install a free item with `npx shadcn@latest add @chatcn/<name>` and a Pro item with `npx shadcn@latest add @chatcn-pro/<name>`. Full docs for any item: `https://chatcn.dev/docs/components/<name>.md`.
+
+## chatcn Pro
+
+- `line-draw-reveal` (Pro): **Line draw reveal.** SVG strokes drawn as if by pen, driven by real progress or by time.
+- `highlight-sweep` (Pro): **Highlight sweep.** A marker drawn behind the phrase a citation supports, line by line in reading order.
+- `glyph-morph` (Pro): **Glyph morph.** An icon that morphs into the next one by path interpolation, for state swaps: play to pause, mic to stop, copy to check. Any two icons from the set.
+- `engrave-image` (Pro): **Engrave image.** Any image as a line engraving: parallel lines that bend with the picture's light so they wrap the form, swell with its shadows and cross hatch the darkest parts, in ink and paper from your tokens.
+- `flip-dot-display` (Pro): **Flip dot display.** An electromechanical flip dot sign for status words, streamed tokens and level columns. Discs turn on their axle, only where the picture changes, with a ragged mechanical ripple.
+- `e-ink-panel` (Pro): **E-ink panel.** A panel that refreshes like electronic paper, for agent briefs and calm status boards. Partial refreshes redraw only what changed and leave a faint ghost; a full refresh flashes the sheet clean.
+- `contour-field` (Pro): **Contour field.** Topographic lines from seeded noise or an image's luminance, drawn as SVG strokes in `currentColor`.
+- `particle-text` (Pro): **Particle text.** Text sampled into points that part around the pointer and settle back on a critically damped spring.
+- `particle-image` (Pro): **Particle image.** An image formed by points sized by luminance, gathering once and then holding still.
+- `wireframe-globe` (Pro): **Wireframe globe.** A line or dot globe with markers and great circle routes for global inference stories.
+- `oscilloscope` (Pro): **Oscilloscope.** Audio drawn as a time trace or an XY figure, with phosphor persistence by alpha and no glow.
+- `text-scramble` (Pro): **Text scramble.** A decode effect for headings and code names on a 40 ms tick, with every character cell fixed.
+- `text-roll` (Pro): **Text roll.** A vertical roll swap for short status labels, clipped to one line, 150 ms.
+- `word-sync-captions` (Pro): **Word sync captions.** Word level highlight synced to audio time, as read aloud paragraphs, two line captions or karaoke.
+- `dither-video` (Pro): **Dither video.** Live video, a stream or the camera dithered in a shader through the shared WebGL2 context, with every camera permission state designed and the loop paused offscreen.
+- `ascii-video` (Pro): **ASCII video.** Live video or the camera as ASCII in Geist Mono for voice and camera modes, drawn from the shared glyph atlas in WebGL. Paused, the frame is text you can select and copy.
+- `ascii-3d` (Pro): **ASCII 3D.** A rotating torus, cube, octahedron or your logo extruded from an SVG path, drawn as ASCII in the donut.c tradition but ray marched per cell, throttled to about 20 fps.
+- `pixel-image` (Pro): **Pixel image.** An image downsampled and quantized to the gray ramp or your token palette, drawn with crisp pixels that land on whole device pixels.
+- `pixel-font` (Pro): **Pixel font.** Text in a 5 x 7 LCD face or a bold 8 x 8 screen face for labels, badges and screens, drawn as one SVG path with a real text layer you can select and copy.
+- `threshold-reveal` (Pro): **Threshold reveal.** A 1 bit stencil of the image rises out of the paper as its threshold lowers, then tone floods in from the shadows until the image is fully toned, with a CSS filter fallback.
+- `dissolve-transition` (Pro): **Dissolve transition.** Swaps one image for the next through a seedable random pixel dissolve, for regenerate and variation swaps. The old picture holds until the new one has loaded.
+- `iris-reveal` (Pro): **Iris reveal.** A `clip-path: circle()` reveal that opens from the point the person clicked, for opening a generation from a grid, and folds back to it on close.
+- `scanline-loader` (Pro): **Scanline loader.** A framed placeholder with faint 2 px scanlines and one soft band passing over it, for a frame that is being rendered. CSS only.
+- `tile-flip-loader` (Pro): **Tile flip loader.** Square tiles flipping on Y in a diagonal wave, 2 to 4 a side. Transform and opacity only, settles flat under reduced motion.
+- `square-morph-loader` (Pro): **Square morph loader.** The kit's stop square morphing to a bar and a pill and back, with `clip-path: inset(round)` and a quarter turn. CSS only.
+- `token-rate-meter` (Pro): **Token rate meter.** Live tokens per second while a response streams, with a 30 s sparkline and the true average once the run ends.
+- `skeleton-data-set` (Pro): **Skeleton data set.** Skeletons for tool results at their real size: code with numbered lines, a table with its column widths kept, a chart with axes drawn, a map tile grid.
+- `progress-toast-stack` (Pro): **Progress toast stack.** Stacked toasts for background generations with live progress, an elapsed timer, the outcome in words, and swipe to dismiss.
+- `denoise-placeholder` (Pro): **Denoise placeholder.** An image slot for a diffusion job: grayscale grain that converges toward a blurred low frequency field as real steps arrive, then sharpens into the finished image.
+- `dither-progress-placeholder` (Pro): **Dither progress placeholder.** A placeholder that gains information as the job advances: 1 bit, then 4, 8 and 16 tone ordered dithers with cells that get finer, then a crossfade to the photo.
+- `contour-loader` (Pro): **Contour loader.** Topographic contour lines over slowly evolving simplex noise: a calm alternative to a spinner for large panels, an empty canvas or a workspace that is indexing.
+- `halftone-loader` (Pro): **Halftone loader.** A field of halftone dots whose size rides a slow wave, drawn by the shared shader runtime in two gray tokens. For empty panels and media slots while something larger loads.
+- `ascii-wave-loader` (Pro): **ASCII wave loader.** An ASCII luminance ramp animated as a wave field inside a fixed size block, for terminal style waits: a sandbox booting, a container pulling, a model loading.
+- `blur-up-image` (Pro): **Blur up image.** An image that paints a ThumbHash placeholder in the first frame, in color, grayscale or a 1 bit dither, and crossfades to the photo once it is decoded.
+- `variant-crossfade` (Pro): **Variant crossfade.** Compares image variants in one frame that never moves: only the picture changes, so the eye compares content, not layout. Number keys blink between takes.
+- `inpaint-reveal` (Pro): **Inpaint reveal.** Inpainting progress where it happens: only the masked region resolves, through a dither whose tone count climbs or grain that settles, while every pixel outside stays exactly as it was.
+- `upscale-reveal` (Pro): **Upscale reveal.** Low to high resolution behind a scanning loupe band: everything the band has passed is upscaled, everything ahead is still the original, and inside it the gained detail is magnified.
+- `gallery-view-transition` (Pro): **Gallery view transition.** A grid that opens into a lightbox with the tile morphing into the full image: the View Transitions API where the browser has it, a FLIP transform where it does not.
+- `dither-reveal` (Pro): **Dither reveal.** The signature chatcn generation reveal: the image arrives through an ordered dither, a 1 bit threshold sweep out of the paper, then 4 and 8 tones, then full tone resolving into the color photo.
+- `error-diffusion-reveal` (Pro): **Error diffusion reveal.** The classic Mac look as a loading state: Atkinson or Floyd-Steinberg dithers that get finer, computed once in a worker and cached, then resolved into the photo.
+- `pixelate-reveal` (Pro): **Pixelate reveal.** Mosaic resolution steps of 64, 32, 16, 8, 4 and 1 px with 120 ms holds. Discrete steps read as intentional, not blurry.
+- `interlace-reveal` (Pro): **Interlace reveal.** The image arrives like a progressive PNG: Adam7 passes, or every 8th, 4th and 2nd line, each pass filling top to bottom.
+- `scan-reveal` (Pro): **Scan reveal.** A top to bottom reveal behind a hairline scan edge, tied to real byte progress when you stream the file.
+- `denoise-reveal` (Pro): **Denoise reveal.** The honest picture of diffusion: gray noise mixed into the image by 1 - t, a blur that falls as t rises, and color that settles last.
+- `halftone-reveal` (Pro): **Halftone reveal.** Halftone dots grow from points to their full tone, center out, then the screen crossfades into the photo.
+- `ascii-reveal` (Pro): **ASCII reveal.** The image renders first as ASCII in Geist Mono, then each glyph cell dissolves into a pixel of the picture's own color, and the pixels resolve into the photo.
+- `tile-reveal` (Pro): **Tile reveal.** The image arrives as a grid of tiles that fade in, in random, Bayer, reading, diagonal or center out order. Good for 2 x 2 generation grids.
+- `mosaic-shuffle` (Pro): **Mosaic shuffle.** The image starts as a shuffled mosaic and every tile slides home, for reroll and remix moments.
+- `number-flow` (Pro): **Number flow.** A number that rolls each changed digit to its new value: credits, cost, tokens, queue positions. It never counts up from zero on mount, formats with Intl in any locale, and announces politely without flooding screen readers.
+- `text-morph` (Pro): **Text morph.** Morphs one short label into another: letters both share glide to their new place, the rest fade. For labels that change in place, such as Run to Running or Copy to Copied.
+- `progress-ring-eta` (Pro): **Progress ring with ETA.** Progress for a long generation: a ring with a tabular percent, the time so far and a range for the time left, such as about 20 to 40 s, instead of a precise number nobody can promise.
+- `queue-position` (Pro): **Queue position.** A job waiting its turn: 3rd in queue, with the number rolling down as the line moves, an honest wait range, a Notify me toggle so people can leave the tab, and Leave queue.
+- `stage-label-cycler` (Pro): **Stage label cycler.** One line that says what a long task is doing now: stage labels roll up as each stage starts, the active one carries the kit's shimmer, and the step count moves with it.
+- `long-wait-escalation` (Pro): **Long wait escalation.** The pending state for a request that might take a while: nothing for 300 ms, then Thinking, then Still working with the seconds, then an offer to be notified when it is done, keep waiting or cancel.
+- `skeleton-media-set` (Pro): **Media skeletons.** Placeholders for generated media that hold the final shape from the first paint: an image as a coarse cell grid, video as a film strip, audio as a flat player and a 3D model as a wire cube.
+- `favicon-loader` (Pro): **Favicon loader.** While a background tab generates, the favicon becomes a tiny pixel grid loader and the title reads (42%) Your title. A done or failed badge waits on your favicon until the tab is seen, then both are restored.
+- `batch-progress-grid` (Pro): **Batch progress grid.** A batch of generations as a grid of tiles, each in its own state: queued, running with its progress, done with the image, failed with Retry, or filtered with the reason, under a header with the count, the overall progress, Retry failed and Cancel all.
+- `pixel-grid-loader` (Pro): **Pixel grid loader.** A grid of rounded squares lighting in named patterns. CSS only, themed by text color, with a still frame for reduced motion.
+- `bayer-loader` (Pro): **Bayer loader.** Cells fade in Bayer matrix order, so the loop reads as an ordered dither filling in and emptying.
+- `dot-matrix-loader` (Pro): **Dot matrix loader.** A pending state drawn as an LED sign: a short label scrolling through a dot window, an animated dot glyph, or both.
+- `led-matrix` (Pro): **LED matrix.** A dot matrix display for text and numbers: static, scrolling, or updating only the dots that change.
+- `split-flap` (Pro): **Split flap.** Solari board flips for status words and changing stats. Only the characters that change flip.
+- `ascii-spinner-set` (Pro): **ASCII spinner set.** Thirty text mode spinners for terminal and developer surfaces, in fixed width cells so nothing shifts.
+- `braille-progress` (Pro): **Braille progress.** Determinate progress drawn with braille characters at eight steps per character, for terminal styled surfaces.
+- `segmented-progress` (Pro): **Segmented progress.** An LCD style segmented bar for queued and running jobs, with a tabular percent and five states.
+- `chatcn-pro-effects` (Pro): **Effect engine.** The shared runtime under every Pro effect: one WebGL2 context for the whole page, theme tokens as RGBA, a frame clock that stops offscreen, a still frame under reduced motion, error diffusion in a worker and an honest progress driver. Docs: https://chatcn.dev/docs/components/effect-engine.md.
+- `dither-image` (Pro): **Dither image.** Any image rendered dithered: Bayer 2, 4 and 8 and blue noise in a shader, Floyd-Steinberg, Atkinson and Sierra Lite in a worker, with ink and paper from your tokens and cells snapped to device pixels.
+- `dither-gradient` (Pro): **Dither gradient.** A linear, radial or conic tonal ramp drawn as a 1 bit dither: the monochrome replacement for gradient fills, static and token colored.
+- `dither-field` (Pro): **Dither field.** An animated dithered noise field in simplex, warp or ripple mode for a bounded media frame, at 24 fps through the shared clock, with a still frame and a pause control.
+- `halftone-image` (Pro): **Halftone image.** A photo as a monochrome halftone screen with angle, cell size and round, square or line dots, antialiased in the shader, ink and paper from tokens.
+- `ascii-image` (Pro): **ASCII image.** An image as ASCII in Geist Mono: a selectable pre for small grids, a glyph atlas canvas for large ones, and shape aware matching that follows edges instead of stepping.
+- `ascii-heading` (Pro): **ASCII heading.** Figlet style lettering from text in three compact block fonts, with the real heading underneath for screen readers and search, falling back gracefully when space runs out.
+- `film-grain` (Pro): **Film grain.** Grain for media from a tiled blue noise texture: still by default inside product UI, moving at 24 fps on request, with intensity, size and blend.
+- `loupe` (Pro): **Loupe.** A magnifier for inspecting generations at 2x to 8x: follows the pointer, moves with the arrow keys, opens on press and hold, and shows the source pixel grid from 8x.
+- `dither-avatar` (Pro): **Dither avatar.** Agent and persona avatars rendered as dithered or halftone portraits from any photo, 24 to 96 px, with initials, presence and an accent ring.
